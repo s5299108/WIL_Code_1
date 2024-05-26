@@ -47,7 +47,7 @@ export default Home = function ({navigation}) {
           </Text>
          {showHint && (
         <Text style={styles.hint}>
-         Check module for  Binary Conversions to know more. 
+         Check information for  Binary Conversions to know more. 
          In binary representation, each digit represents a power of 2. Calculate the decimal equivalent by adding the corresponding powers of 2 for each 1 digit in the binary number.
         </Text>
       )}

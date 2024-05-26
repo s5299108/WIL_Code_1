@@ -11,7 +11,7 @@ export default Home = function ({navigation}) {
         setShowHint(!showHint);
       };
     const navToCorrect = () => {
-        if (value === 'A young boy runs fast along the beach at sunset') {
+        if (value === 'WILD RIDE') {
             navigation.navigate('Correct_4');
         } else {
             navigation.navigate('Incorrect');
@@ -27,7 +27,7 @@ export default Home = function ({navigation}) {
           <Text> </Text>
           <Text> </Text>
           <Text> </Text>
-          <Text> U Ocklr qco pklz vuzi uyclr isw qwujs ui zklzwi </Text>
+          <Text>Decrypt the message "GRYH QFSA" that was encrypted using a Caesar cipher with a shift of 10. </Text>
           <TextInput style={styles.input} value = {value} onChangeText={setvalue} />
           <Text> </Text>
           <Text> </Text>
@@ -40,14 +40,12 @@ export default Home = function ({navigation}) {
           <Text> </Text>
           <Text> </Text>
           <Text> </Text>
-          <Text> </Text>
           <Text style={{ fontSize: 20 }} onPress={toggleHint}>
             Hint
           </Text>
          {showHint && (
         <Text style={styles.hint}>
-         Each letter is directly correlated with a different letter
-        eg. If the first 'a' is equal to 'f', then every 'a' is equal to 'f', etc.
+        Shift each letter in "GRYH QFSA" ten places to the left in the alphabet.
         </Text>
       )}
         </View>

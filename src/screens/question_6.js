@@ -45,7 +45,7 @@ export default Home = function ({navigation}) {
           </Text>
          {showHint && (
         <Text style={styles.hint}>
-        Check module for  Binary Conversions to know more. 
+        Check information for  Binary Conversions to know more. 
          Start by finding the largest power of 2 that is less than or equal to 9, and then proceed by subtracting powers of 2 to find the binary representation.
         </Text>
       )}

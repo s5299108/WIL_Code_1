@@ -11,7 +11,7 @@ export default Home = function ({navigation}) {
         setShowHint(!showHint);
       };
     const navToCorrect = () => {
-        if (value === 'The new store sells a variety of fresh tasty foods') {
+        if (value === 'RJJY RJ FY SSTS') {
             navigation.navigate('Correct_3');
         } else {
             navigation.navigate('Incorrect');
@@ -22,12 +22,12 @@ export default Home = function ({navigation}) {
           <Text style={{fontSize: 20, color: 'blue'}}>Solve the following code:</Text>
           <Text> </Text>
           <Text> </Text>
-          <Text>Well done with those first couple of questions! Try out the next few questions, </Text>
-          <Text></Text>
-          <Text>Good luck!</Text>
           <Text> </Text>
           <Text> </Text>
-          <Text> Eaq lqk detwq dqrrd p jpwvqez tu uwqda epdez uttsd </Text>
+          <Text> </Text>
+          <Text> </Text>
+          <Text> </Text>
+          <Text>Encrypt the message "MEET ME AT NOON" using a Caesar cipher with a shift of 5. </Text>
           <TextInput style={styles.input} value = {value} onChangeText={setvalue} />
           <Text> </Text>
           <Text> </Text>
@@ -40,14 +40,12 @@ export default Home = function ({navigation}) {
           <Text> </Text>
           <Text> </Text>
           <Text> </Text>
-          <Text> </Text>
           <Text style={{ fontSize: 20 }} onPress={toggleHint}>
             Hint
           </Text>
          {showHint && (
         <Text style={styles.hint}>
-         Each letter is directly correlated with a different letter
-        eg. If the first 'a' is equal to 'f', then every 'a' is equal to 'f', etc.
+        Shift each letter in "MEET ME AT NOON" five places to the right in the alphabet.
         </Text>
       )}
         </View>

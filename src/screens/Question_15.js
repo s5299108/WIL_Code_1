@@ -1,5 +1,5 @@
 // Home.js
-import { View,Text,StyleSheet, TextInput, Button, Image } from "react-native";
+import { View,Text,StyleSheet, TextInput, Button } from "react-native";
 import React, {useState} from 'react';
 import FlatButton from "./button";
 export default Home = function ({navigation}) {
@@ -11,8 +11,8 @@ export default Home = function ({navigation}) {
         setShowHint(!showHint);
       };
     const navToCorrect = () => {
-        if (value === 'W') {
-            navigation.navigate('Correct');
+        if (value === 'A young boy runs fast along the beach at sunset') {
+            navigation.navigate('Correct_15');
         } else {
             navigation.navigate('Incorrect');
         }
@@ -22,23 +22,22 @@ export default Home = function ({navigation}) {
           <Text style={{fontSize: 20, color: 'blue'}}>Solve the following code:</Text>
           <Text> </Text>
           <Text> </Text>
-          <Text> Posted below is a Playfair grid. The cyphertext and plaintext is mirrored, </Text>
-          <Text> meaning that 'I' is replaced with 'H' and vice-versa. 'B' is also replaced </Text>
-          <Text> with 'M' and vice versa.</Text>
-          <Text> </Text>
-          <Text> </Text>
-          <Image source={require('../../assets/images/Playfair.png')} style = {{height: 100, width: 100, objectFit: 'contain'}}></Image>
-          <Text> </Text>
-          <Text> </Text>
-          <Text> Given the rule illustrated above, which letter would be the plaintext version</Text>
-          <Text> of the letter 'N'? (Must be in caps)</Text> 
           <Text> </Text>
           <Text> </Text>
           <Text> </Text>
+          <Text> </Text>
+          <Text> </Text>
+          <Text> U Ocklr qco pklz vuzi uyclr isw qwujs ui zklzwi </Text>
           <TextInput style={styles.input} value = {value} onChangeText={setvalue} />
           <Text> </Text>
           <Text> </Text>
           <Button title='Submit' onPress={navToCorrect}>Submit</Button>
+          <Text> </Text>
+          <Text> </Text>
+          <Text> </Text> 
+          <Text> </Text>
+          <Text> </Text>
+          <Text> </Text>
           <Text> </Text>
           <Text> </Text>
           <Text> </Text>
@@ -47,8 +46,8 @@ export default Home = function ({navigation}) {
           </Text>
          {showHint && (
         <Text style={styles.hint}>
-         Look at the position of 'N' in the grid. It is in the fourth row, second column.
-        Find the letter in the same row but mirrored in the same column.
+         Each letter is directly correlated with a different letter
+        eg. If the first 'a' is equal to 'f', then every 'a' is equal to 'f', etc.
         </Text>
       )}
         </View>

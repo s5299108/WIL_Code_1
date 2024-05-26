@@ -2,8 +2,6 @@
 import { View,Text,StyleSheet, TextInput } from "react-native";
 
 export default Correct = function ({navigation}) {
-    const navToHome = () => navigation.navigate('Home')
-    const navToInfo = () => navigation.navigate('Information_2')
     const navToQ3 = () => navigation.navigate('Question_3')
     return (
         <View style={styles.container}>

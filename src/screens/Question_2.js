@@ -1,5 +1,5 @@
 // Home.js
-import { View,Text,StyleSheet, TextInput, Button } from "react-native";
+import { View,Text,StyleSheet, TextInput, Button, Image } from "react-native";
 import React, {useState} from 'react';
 import FlatButton from "./button";
 export default Home = function ({navigation}) {
@@ -11,7 +11,7 @@ export default Home = function ({navigation}) {
         setShowHint(!showHint);
       };
     const navToCorrect = () => {
-        if (value === 'A small bird sings sweetly in the green leafy tree') {
+        if (value === 'INFORMATION') {
             navigation.navigate('Correct_2');
         } else {
             navigation.navigate('Incorrect');
@@ -22,22 +22,18 @@ export default Home = function ({navigation}) {
           <Text style={{fontSize: 20, color: 'blue'}}>Solve the following code:</Text>
           <Text> </Text>
           <Text> </Text>
-          <Text> </Text>
-          <Text></Text>
-          <Text> </Text>
+          <Text>The scrambled message "IOTRMNFET" is a transposition of which original message?</Text>
           <Text> </Text>
           <Text> </Text>
-          <Text> F lafee mvhi lvtdl lpoowek vt wbo dhoot eofuk whoo </Text>
+          <Text> </Text>
+          <Text> </Text>
+          <Text> </Text>
+          <Text> </Text>
+          <Text> </Text>
           <TextInput style={styles.input} value = {value} onChangeText={setvalue} />
           <Text> </Text>
           <Text> </Text>
           <Button title='Submit' onPress={navToCorrect}>Submit</Button>
-          <Text> </Text>
-          <Text> </Text>
-          <Text> </Text> 
-          <Text> </Text>
-          <Text> </Text>
-          <Text> </Text>
           <Text> </Text>
           <Text> </Text>
           <Text> </Text>
@@ -46,8 +42,8 @@ export default Home = function ({navigation}) {
           </Text>
          {showHint && (
         <Text style={styles.hint}>
-         Each letter is directly correlated with a different letter
-        eg. If the first 'a' is equal to 'f', then every 'a' is equal to 'f', etc.
+         Try to rearrange the letters to form a meaningful word.
+         To know more about Transposition cipher check out the information section. 
         </Text>
       )}
         </View>

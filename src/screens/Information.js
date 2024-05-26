@@ -12,12 +12,15 @@ const topics = [
   { id: '8', title: 'Transposition cipher' },
   { id: '9', title: 'Atbash cipher' },
   { id: '10', title: 'Playfair cipher' },
+  { id: '10', title: 'Playfair cipher' },
+  { id: '11', title: ' Binary Conversions' },
+ 
 ];
 
 export default function Home({ navigation }) {
   const handlePress = (id) => {
     navigation.navigate(`Info${id}`);
-   //navigation.navigate(`Information_2`);I
+ 
   };
 
   return (

@@ -8,7 +8,6 @@ import Hint from "./src/screens/Hint";
 import Correct from "./src/screens/Correct";
 import Incorrect from "./src/screens/Incorrect";
 import Information from "./src/screens/Information";
-import Information_2 from "./src/screens/Information_2";
 import Question_1 from "./src/screens/Question_1";
 import Question_2 from "./src/screens/Question_2";
 import Correct_2 from "./src/screens/Correct_2";
@@ -30,6 +29,16 @@ import question_10 from "./src/screens/question_10";
 import correct_10 from "./src/screens/correct_10";
 import Question_11 from "./src/screens/Question_11";
 import correct_11 from "./src/screens/correct_11";
+import Question_12 from "./src/screens/Question_12";
+import Correct_12 from "./src/screens/Correct_12";
+import Question_13 from "./src/screens/Question_13";
+import Correct_13 from "./src/screens/Correct_13";
+import Question_14 from "./src/screens/Question_14";
+import Correct_14 from "./src/screens/Correct_14";
+import Question_15 from "./src/screens/Question_15";
+import Correct_15 from "./src/screens/Correct_15";
+import Question_16 from "./src/screens/Question_16";
+import Correct_16 from "./src/screens/Correct_16";
 import Info1 from "./src/screens/Info1";
 import Info2 from "./src/screens/Info2";
 import Info3 from "./src/screens/Info3";
@@ -40,7 +49,9 @@ import Info7 from "./src/screens/Info7";
 import Info8 from "./src/screens/Info8";
 import Info9 from "./src/screens/Info9";
 import Info10 from "./src/screens/Info10";
+import Info11 from "./src/screens/Info11";
 import StartPage from "./src/screens/StartPage";
+
 const Stack = createStackNavigator()
 const Tab = createBottomTabNavigator();
 
@@ -54,7 +65,6 @@ function MainStack() {
          <Stack.Screen name="Information" component={Information}/>
          <Stack.Screen name="StartPage" component={StartPage} />
          <Stack.Screen name="MainTabs" component={TabNavigator} />
-         <Stack.Screen name="Information_2" component={Information_2}/>
          <Stack.Screen name="Question_1" component={Question_1}/>
          <Stack.Screen name="Question_2" component={Question_2}/>
          <Stack.Screen name="Correct_2" component={Correct_2}/>
@@ -76,6 +86,16 @@ function MainStack() {
         <Stack.Screen name="correct_10" component={correct_10}/>
         <Stack.Screen name="Question_11" component={Question_11}/>
         <Stack.Screen name="correct_11" component={correct_11}/>
+        <Stack.Screen name="Question_12" component={Question_12}/>
+        <Stack.Screen name="Correct_12" component={Correct_12}/>
+        <Stack.Screen name="Question_13" component={Question_13}/>
+        <Stack.Screen name="Correct_13" component={Correct_13}/>
+        <Stack.Screen name="Question_14" component={Question_14}/>
+        <Stack.Screen name="Correct_14" component={Correct_14}/>
+        <Stack.Screen name="Question_15" component={Question_15}/>
+        <Stack.Screen name="Correct_15" component={Correct_15}/>
+        <Stack.Screen name="Question_16" component={Question_16}/>
+        <Stack.Screen name="Correct_16" component={Correct_16}/>
         <Stack.Screen name="Info1" component={Info1}/>
         <Stack.Screen name="Info2" component={Info2}/>
         <Stack.Screen name="Info3" component={Info3}/>
@@ -86,6 +106,7 @@ function MainStack() {
         <Stack.Screen name="Info8" component={Info8}/>
         <Stack.Screen name="Info9" component={Info9}/>
         <Stack.Screen name="Info10" component={Info10}/>
+        <Stack.Screen name="Info11" component={Info11}/>
       
     </Stack.Navigator>
   );
