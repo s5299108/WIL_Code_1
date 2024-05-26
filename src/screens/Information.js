@@ -2,22 +2,22 @@ import React from 'react';
 import { View, Text, StyleSheet, FlatList, TouchableOpacity } from 'react-native';
 
 const topics = [
-  { id: '1', title: 'Topic 1' },
-  { id: '2', title: 'Topic 2' },
-  { id: '3', title: 'Topic 3' },
-  { id: '4', title: 'Topic 4' },
-  { id: '5', title: 'Topic 5' },
-  { id: '6', title: 'Topic 6' },
-  { id: '7', title: 'Topic 7' },
-  { id: '8', title: 'Topic 8' },
-  { id: '9', title: 'Topic 9' },
-  { id: '10', title: 'Topic 10' },
+  { id: '1', title: 'What is Cryptography ?' },
+  { id: '2', title: 'Why Cryptography is needed ?' },
+  { id: '3', title: 'What is Encryption and Decryption ?' },
+  { id: '4', title: 'What are the Types of Cryptography ?' },
+  { id: '5', title: 'What are puzzles and how can it be fun to solve puzzles using cryptography?' },
+  { id: '6', title: 'Plaintext cipher' },
+  { id: '7', title: 'Caesar cipher' },
+  { id: '8', title: 'Transposition cipher' },
+  { id: '9', title: 'Atbash cipher' },
+  { id: '10', title: 'Playfair cipher' },
 ];
 
 export default function Home({ navigation }) {
   const handlePress = (id) => {
-   // navigation.navigate(`Info${id}`);
-   navigation.navigate(`nformation_2`);I
+    navigation.navigate(`Info${id}`);
+   //navigation.navigate(`Information_2`);I
   };
 
   return (

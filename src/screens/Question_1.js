@@ -47,6 +47,7 @@ export default Home = function ({navigation}) {
           </Text>
          {showHint && (
         <Text style={styles.hint}>
+          Check Module Transposition cipher, to know more.
          Each letter is directly correlated with a different letter
         eg. If the first 'a' is equal to 'f', then every 'a' is equal to 'f', etc.
         </Text>

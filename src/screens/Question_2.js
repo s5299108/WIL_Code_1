@@ -22,8 +22,8 @@ export default Home = function ({navigation}) {
           <Text style={{fontSize: 20, color: 'blue'}}>Solve the following code:</Text>
           <Text> </Text>
           <Text> </Text>
-          <Text>Have a go at solving the following puzzle, taking into account some of </Text>
-          <Text>the rules illustrated in the previous page.</Text>
+          <Text> </Text>
+          <Text></Text>
           <Text> </Text>
           <Text> </Text>
           <Text> </Text>

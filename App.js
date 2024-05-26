@@ -30,14 +30,23 @@ import question_10 from "./src/screens/question_10";
 import correct_10 from "./src/screens/correct_10";
 import Question_11 from "./src/screens/Question_11";
 import correct_11 from "./src/screens/correct_11";
-
+import Info1 from "./src/screens/Info1";
+import Info2 from "./src/screens/Info2";
+import Info3 from "./src/screens/Info3";
+import Info4 from "./src/screens/Info4";
+import Info5 from "./src/screens/Info5";
+import Info6 from "./src/screens/Info6";
+import Info7 from "./src/screens/Info7";
+import Info8 from "./src/screens/Info8";
+import Info9 from "./src/screens/Info9";
+import Info10 from "./src/screens/Info10";
 import StartPage from "./src/screens/StartPage";
 const Stack = createStackNavigator()
 const Tab = createBottomTabNavigator();
 
 function MainStack() {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen name="Home" component={Home} />
          <Stack.Screen name="Hint" component={Hint}/>
          <Stack.Screen name="Correct" component={Correct}/>
@@ -67,6 +76,16 @@ function MainStack() {
         <Stack.Screen name="correct_10" component={correct_10}/>
         <Stack.Screen name="Question_11" component={Question_11}/>
         <Stack.Screen name="correct_11" component={correct_11}/>
+        <Stack.Screen name="Info1" component={Info1}/>
+        <Stack.Screen name="Info2" component={Info2}/>
+        <Stack.Screen name="Info3" component={Info3}/>
+        <Stack.Screen name="Info4" component={Info4}/>
+        <Stack.Screen name="Info5" component={Info5}/>
+        <Stack.Screen name="Info6" component={Info6}/>
+        <Stack.Screen name="Info7" component={Info7}/>
+        <Stack.Screen name="Info8" component={Info8}/>
+        <Stack.Screen name="Info9" component={Info9}/>
+        <Stack.Screen name="Info10" component={Info10}/>
       
     </Stack.Navigator>
   );
@@ -76,7 +95,7 @@ function TabNavigator() {
   return (
     <Tab.Navigator>
       <Tab.Screen name="Puzzle" component={MainStack} options={{ headerShown: false }} />
-      <Tab.Screen name="Information" component={Information} />
+      <Tab.Screen name="Information" component={Information} options={{ headerShown: false }}/>
     </Tab.Navigator>
   );
 }

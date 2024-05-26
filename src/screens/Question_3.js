@@ -23,7 +23,7 @@ export default Home = function ({navigation}) {
           <Text> </Text>
           <Text> </Text>
           <Text>Well done with those first couple of questions! Try out the next few questions, </Text>
-          <Text>once again remembering some of the rules highlighted in the previous slide.</Text>
+          <Text></Text>
           <Text>Good luck!</Text>
           <Text> </Text>
           <Text> </Text>
