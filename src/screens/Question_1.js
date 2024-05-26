@@ -10,10 +10,7 @@ export default Home = function ({navigation}) {
     const toggleHint = () => {
         setShowHint(!showHint);
       };
-    function myfunction() {
-        return ("Hello");
-    }
-    const navToHint = () => navigation.navigate('Hint');
+    
     const navToCorrect = () => {
         if (value === 'The quick slick fox jumped over the brown lazy dog') {
             navigation.navigate('Correct');

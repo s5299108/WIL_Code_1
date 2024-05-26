@@ -8,7 +8,7 @@ export default Home = function ({navigation}) {
     );
     const [showHint, setShowHint] = useState(false);
     
-    const navToHint = () => navigation.navigate('Hint')
+   
     const navToCorrect = () => {
         if (value === 'TOBORN') {
             navigation.navigate('correct_10');

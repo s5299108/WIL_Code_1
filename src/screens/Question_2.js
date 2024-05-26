@@ -6,10 +6,10 @@ export default Home = function ({navigation}) {
     const [value, setvalue] = useState (
         ''
     )
-    function myfunction() {
-        return ("Hello");
-    }
-    const navToHint = () => navigation.navigate('Hint')
+    const [showHint, setShowHint] = useState(false);
+    const toggleHint = () => {
+        setShowHint(!showHint);
+      };
     const navToCorrect = () => {
         if (value === 'A small bird sings sweetly in the green leafy tree') {
             navigation.navigate('Correct_2');
@@ -41,9 +41,15 @@ export default Home = function ({navigation}) {
           <Text> </Text>
           <Text> </Text>
           <Text> </Text>
-          <Text style={{fontSize:20}} onPress={navToHint}>
-           Hint
+          <Text style={{ fontSize: 20 }} onPress={toggleHint}>
+            Hint
           </Text>
+         {showHint && (
+        <Text style={styles.hint}>
+         Each letter is directly correlated with a different letter
+        eg. If the first 'a' is equal to 'f', then every 'a' is equal to 'f', etc.
+        </Text>
+      )}
         </View>
     )
 }
