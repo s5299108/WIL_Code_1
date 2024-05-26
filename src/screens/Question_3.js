@@ -67,5 +67,10 @@ const styles = StyleSheet.create({
         padding: 8,
         margin: 10,
         width: 200,
-      }
+      },
+      hint: {
+        marginTop: 20,
+        fontSize: 16,
+        color: 'green',
+      },
 })
