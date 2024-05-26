@@ -3,6 +3,8 @@ import { View,Text,StyleSheet, TextInput } from "react-native";
 
 export default Correct = function ({navigation}) {
     const navToHome = () => navigation.navigate('Home')
+   // const navToInfo = () => navigation.navigate('Information_2')
+    const navToQ2 = () => navigation.navigate('Question_2')
     return (
         <View style={styles.container}>
           <Text style={{fontSize: 20, color: 'blue'}}></Text>
@@ -12,7 +14,7 @@ export default Correct = function ({navigation}) {
           <Text> </Text>
           <Text> </Text>
           <Text> </Text>
-          Try again
+          Congratulations!
           <Text> </Text>
           <Text> </Text>
           <Text> </Text>
@@ -32,8 +34,8 @@ export default Correct = function ({navigation}) {
           <Text> </Text>
           <Text style={{fontSize:20, color:'green'}} onPress = {()=>navigation.navigate('Home')}>
           </Text>
-          <Text style={{fontSize:20, color:'red'}} onPress={navToHome} multiline={true}>
-           Go Back
+          <Text style={{fontSize:20, color:'red'}} onPress={navToQ2} multiline={true}>
+           Continue
           </Text>
         </View>
     )

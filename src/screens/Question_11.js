@@ -11,8 +11,8 @@ export default Home = function ({navigation}) {
     }
     const navToHint = () => navigation.navigate('Hint')
     const navToCorrect = () => {
-        if (value === 'The quick slick fox jumped over the brown lazy dog') {
-            navigation.navigate('Correct');
+        if (value === 'Wkh ilyh eralqj zlcdugv mxps txlfnob') {
+            navigation.navigate('correct_11');
         } else {
             navigation.navigate('Incorrect');
         }
@@ -22,12 +22,12 @@ export default Home = function ({navigation}) {
           <Text style={{fontSize: 20, color: 'blue'}}>Solve the following code:</Text>
           <Text> </Text>
           <Text> </Text>
+          <Text> Aside from decryption, being able to encrypt a code into cyphertext is another </Text>
+          <Text> useful skill to have. Written below is a normal statement written in plaintext.</Text>
+          <Text> See if you can encrypt the statement by shifting the letters three spots up in</Text>
+          <Text> the alphabet.</Text>
           <Text> </Text>
-          <Text> </Text>
-          <Text> </Text>
-          <Text> </Text>
-          <Text> </Text>
-          <Text> Uif rvjdl tmjdl gpy kvnqfe pwfs uif cspxo mbaz eph </Text>
+          <Text> The five boxing wizards jump quickly </Text>
           <TextInput style={styles.input} value = {value} onChangeText={setvalue} />
           <Text> </Text>
           <Text> </Text>

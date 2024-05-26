@@ -5,6 +5,7 @@ export default Correct = function ({navigation}) {
     const navToHome = () => navigation.navigate('Home')
     const navToInfo = () => navigation.navigate('Information_2')
     const navToQ4 = () => navigation.navigate('Question_4')
+    // const navToQ4 = () => navigation.navigate('Question_4')
     return (
         <View style={styles.container}>
           <Text style={{fontSize: 20, color: 'blue'}}></Text>
