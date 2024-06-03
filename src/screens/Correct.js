@@ -2,7 +2,7 @@
 import { View,Text,StyleSheet, TextInput } from "react-native";
 
 export default Correct = function ({navigation}) {
-    const navToHome = () => navigation.navigate('Home')
+    //const navToHome = () => navigation.navigate('Home')
    // const navToInfo = () => navigation.navigate('Information_2')
     const navToQ2 = () => navigation.navigate('Question_2')
     return (

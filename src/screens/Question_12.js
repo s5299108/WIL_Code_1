@@ -1,19 +1,18 @@
 // Home.js
-import { View,Text,StyleSheet, TextInput, Button } from "react-native";
+import { View,Text,StyleSheet, TextInput, Button ,TouchableOpacity} from "react-native";
 import React, {useState} from 'react';
-import FlatButton from "./button";
+import Icon from 'react-native-vector-icons/FontAwesome';
 export default Home = function ({navigation}) {
     const [value, setvalue] = useState (
         ''
-    );
+    )
     const [showHint, setShowHint] = useState(false);
     const toggleHint = () => {
         setShowHint(!showHint);
       };
-    
     const navToCorrect = () => {
-        if (value === 'The quick slick fox jumped over the brown lazy dog') {
-            navigation.navigate('Correct_12');
+        if (value === 'HELLO WORLD') {
+            navigation.navigate('Correct_13');
         } else {
             navigation.navigate('Incorrect');
         }
@@ -22,37 +21,30 @@ export default Home = function ({navigation}) {
         <View style={styles.container}>
           <Text style={{fontSize: 20, color: 'blue'}}>Solve the following code:</Text>
           <Text> </Text>
-          <Text> </Text>
-          <Text> </Text>
-          <Text> </Text>
-          <Text> </Text>
-          <Text> </Text>
-          <Text> </Text>
-          <Text> Uif rvjdl tmjdl gpy kvnqfe pwfs uif cspxo mbaz eph </Text>
+          <Text>Decrypt the ciphertext "HWEOLLRDLO" that was encrypted using a rail fence cipher with 3 rails. </Text>
           <TextInput style={styles.input} value = {value} onChangeText={setvalue} />
           <Text> </Text>
-          <Text> </Text>
+         
           <Button title='Submit' onPress={navToCorrect}>Submit</Button>
           <Text> </Text>
-          <Text> </Text>
-          <Text> </Text> 
-          <Text> </Text>
-          <Text> </Text>
-          <Text> </Text>
-          <Text> </Text>
-          <Text> </Text>
-          <Text> </Text>
-          <Text style={{ fontSize: 20 }} onPress={toggleHint}>
-            Hint
-          </Text>
+         
+          <TouchableOpacity style={styles.hintButton} onPress={toggleHint}>
+                <Icon name="lightbulb-o" size={20} color="#fff" />
+                <Text style={styles.buttonText}> Hint</Text>
+            </TouchableOpacity>
          {showHint && (
         <Text style={styles.hint}>
-          Check Module Caesar cipher, to know more.
-         Each letter is directly correlated with a different letter
-        eg. If the first 'a' is equal to 'f', then every 'a' is equal to 'f', etc.
+          Write the ciphertext in a zigzag pattern across the number of rails, and then read off the plaintext.
+          <Text>H . . . O . . . L</Text>
+          <Text>. W . L . R . D .</Text>
+          <Text>. . E . . . L . .</Text>
+          <Text>Row 1: HOL</Text>
         </Text>
       )}
-          
+       <View style={styles.bottomRightContainer}>
+                <Icon name="hand-o-down" size={20} color="black" />
+                <Text style={styles.bottomRightText}> Check out the "Information" tab to learn more.</Text>
+            </View>
         </View>
     )
 }
@@ -71,10 +63,42 @@ const styles = StyleSheet.create({
         margin: 10,
         width: 200,
       },
-    hint: {
+      hint: {
         marginTop: 20,
         fontSize: 16,
         color: 'green',
       },
+      bottomRightContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        position: 'absolute',
+        bottom: 20,
+        right: 20,
+    },
+    bottomRightText: {
+        color: '#000',
+        fontSize: 16,
+        marginLeft: 5,
+    },
+    hintButton: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      backgroundColor: '#00796b',
+      padding: 10,
+      borderRadius: 5,
+      marginTop: 20,
+      shadowColor: "#000",
+      shadowOffset: {
+          width: 0,
+          height: 2,
+      },
+      shadowOpacity: 0.25,
+      shadowRadius: 3.84,
+      elevation: 5,
+  },
+ 
+  buttonText: {
+      color: '#fff',
+      fontSize: 16,
+  },
 })
-

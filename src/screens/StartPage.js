@@ -7,7 +7,7 @@ const StartPage = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>Welcome to the Cryptography App</Text>
+      <Text style={styles.header}>Welcome to the Cryptography Puzzles</Text>
       <TouchableOpacity style={styles.startButton} onPress={navToMain}>
         <Text style={styles.buttonText}>Start</Text>
       </TouchableOpacity>

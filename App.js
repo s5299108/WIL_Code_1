@@ -50,6 +50,7 @@ import Info8 from "./src/screens/Info8";
 import Info9 from "./src/screens/Info9";
 import Info10 from "./src/screens/Info10";
 import Info11 from "./src/screens/Info11";
+import Info12 from "./src/screens/Info12";
 import StartPage from "./src/screens/StartPage";
 
 const Stack = createStackNavigator()
@@ -107,6 +108,7 @@ function MainStack() {
         <Stack.Screen name="Info9" component={Info9}/>
         <Stack.Screen name="Info10" component={Info10}/>
         <Stack.Screen name="Info11" component={Info11}/>
+        <Stack.Screen name="Info12" component={Info12}/>
       
     </Stack.Navigator>
   );

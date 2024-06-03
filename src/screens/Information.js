@@ -14,6 +14,7 @@ const topics = [
   { id: '10', title: 'Playfair cipher' },
   { id: '10', title: 'Playfair cipher' },
   { id: '11', title: ' Binary Conversions' },
+  { id: '12', title: ' Rail fence cipher' },
  
 ];
 
